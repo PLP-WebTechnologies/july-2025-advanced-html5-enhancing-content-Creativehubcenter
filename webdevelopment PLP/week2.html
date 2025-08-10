@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  
+</head>
+<body>
+  <h1>Languages Table</h1>
+
+  <table border="1">
+  <tr>
+    <th>Category</th>
+    <th style="text-align: center;">Languages</th>
+  </tr>
+  <tr>
+    <td>Frontend Languages</td>
+    <td style="text-align: center;">HTML, CSS, JavaScript</td>
+  </tr>
+  <tr>
+    <td>Backend Languages</td>
+    <td style="text-align: center;">Python, Java, Ruby</td>
+  </tr>
+</table>
+
+  <h2>Images</h2>
+    <video width="640" height="360" controls>
+  <source src="https://videos.pexels.com/video-files/12046193/12046193-uhd_2560_1440_60fps.mp4 " type="video/mp4">
+  <source src="video.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+    <h1>Register for Access</h1>
+    <form action="/submit" method="POST" autocomplete="on">
+      
+      <section>
+        <legend>Personal Information</legend>
+        
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Full Name" required />
+        <br/>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="...@gmail.com" required autocomplete="email" />
+        <br/>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="DOB" required />
+        <br/>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <br/>
+          <option value="">--Select--</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+      </section>
+
+      <section>
+        <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="4" maxlength="15" />
+        </div>
+        <div>
+
+        </div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6" autocomplete="new-password" />
+        </div>
+
+        <div>
+        <label for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" name="confirm" placeholder="Repeat password" required />
+        </div>
+      </section>
+
+      <section>
+        <legend>Preferences</legend>
+
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about yourself..."></textarea>
+
+        <label for="newsletter">Subscribe to newsletter</label>
+        <input type="checkbox" id="newsletter" name="newsletter" />
+
+        <label for="referral">Referral Code</label>
+        <input type="text" id="referral" name="referral" value="INVITE2.0" readonly />
+      </section>
+
+      <input type="submit" value="Register" />
+    </form>
+  </main>
+
+</body>
+</html>
